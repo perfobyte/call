@@ -1,0 +1,68 @@
+
+
+#cl_panel {
+    position:absolute;
+    left:calc(50% - 172px);
+    bottom:50px;
+
+    display:flex;
+    flex-direction:row;
+    height:40px;
+
+    & > * {
+        margin-right:4px;
+    }
+
+    & button {
+        position:relative;
+        height:40px;
+    }
+
+    & button svg {
+        top:10px;
+    }
+}
+
+#cl_panel > .b_dv {
+    border-radius:6px;
+    width:60px;
+
+    display:flex;
+    flex-direction:row;
+
+    &.to {
+        background-color:red;
+    }
+    &.to svg {
+        color:white;
+    }
+
+    &.s {
+        background-color:white;
+    }
+
+    &.s svg {
+        color:var(--call-red-focus-c);
+    }
+
+    & .dv {
+        border-radius:6px;
+        width:20px;
+    }
+        
+    & .dv > svg {
+        left:0;
+    }
+
+    & > .w_dv {
+        width:40px;
+        border-radius:6px;
+    }
+
+    & > .w_dv>svg {
+        left:10px;
+    }
+}
+
+#call .actb > svg > g:nth-child(2)    { opacity:0; }
+#call .actb.cl > svg > g:nth-child(2) { opacity:1; }

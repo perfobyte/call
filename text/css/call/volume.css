@@ -1,0 +1,40 @@
+
+
+#call.S #cl_vo {
+    display:block;
+
+    opacity:1;
+    pointer-events:auto;
+}
+
+#cl_vo {
+    position:absolute;
+
+    opacity:0;
+    pointer-events:none;
+
+    transition:.4s opacity;
+
+    
+    width:200px;
+    height:40px;    
+
+    bottom:50px;
+    left:50px;
+
+    background:rgba(128, 128, 128, 0.25);
+    border-radius:10px;
+    cursor:pointer;
+    z-index:400;
+    overflow:hidden;
+
+    &>div {
+        background:lightgray;
+        position:absolute;
+        top:0;
+        width:1px;
+        height:40px;
+        left:0;
+        transform-origin: left;
+    }
+}

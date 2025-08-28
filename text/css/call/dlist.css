@@ -1,0 +1,106 @@
+
+
+#cl_dlist {
+    position:absolute;
+    bottom:100px;
+    left:calc(50% - 172px);
+
+    width:344px;
+    height:200px;
+
+    overflow:hidden;
+
+    z-index:100;
+    border-radius:10px;
+
+    & ul > li {
+        height:40px;
+    }
+
+    & ul > li > button {
+        position:relative;
+
+        width:100%;
+
+        height:40px;
+        
+    }
+    & ul {
+        padding:0;
+        
+        width:100%;
+        height:fit-content;
+    }
+}
+
+#cl_dlist > :nth-child(1) {
+    
+    --bc: rgb(75, 75, 75);
+    
+    width:100%;
+    height:200px;
+    
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+    direction:ltr;
+    background-color:var(--bc);
+    scrollbar-color: var(--bc) rgb(124, 124, 124);
+    color:white;
+
+
+    &::-webkit-scrollbar-track {
+        background-color: rgb(124, 124, 124);
+    }
+      
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--bc);
+    }
+
+    & .pw {
+        position:relative;
+        left:0;
+        top:0;
+        width:100%;
+        z-index:120;
+        height:50px;
+    }
+
+    & p {
+        position:absolute;
+        top:15px;
+        left:25px;
+        line-height:20px;
+        height:20px;
+        width:100%;
+        height:20px;
+        margin:0;
+        font-size:18px;
+    }
+
+    & span,
+    & p {
+        height:20px;
+        line-height:20px;
+        width:calc(100% - 34px);
+
+        text-align:left;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+    }
+
+    & button.s {
+        background:rgb(91, 95, 109);
+    }
+
+    & span {
+        display:block;
+        
+        position:absolute;
+        top:10px;
+        left:20px;
+
+        font-size:12px;
+    }
+}

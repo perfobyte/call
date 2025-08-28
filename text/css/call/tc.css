@@ -1,0 +1,21 @@
+
+
+#call._0 .b_dv.cl_vd,
+#call._0 #cl_wa,
+#call._1 .b_dv.cl_mc,
+#call._1 #cl_hp,
+#call._1 #cl_vo,
+
+#call div.b_dv.cl_sh,
+#call._2 #cl_sh {
+    display:none;
+}
+
+#call._2 .b_dv.cl_sh {
+    display:flex;
+}
+
+#call._1 #cl_panel,
+#call._0 #cl_panel {
+    left:calc(50% - 113px);
+}

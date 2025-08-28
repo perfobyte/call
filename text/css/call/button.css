@@ -1,0 +1,40 @@
+
+
+#call button {
+    color:white;
+    
+    &:hover {
+        background-color:rgba(150, 150, 150, 0.1);
+    }
+
+    &.co {
+        background-color:white;
+        color:var(--call-red-focus-c);
+    }
+
+    &.SM.st {
+        background-color:red;
+    }
+
+    &.SM.st:hover {
+        background-color:var(--call-red-focus-c);
+    }
+
+    &.SB {
+        width:50px;
+        border-radius:10px;
+        
+        transition:.1s background-color;
+    }
+    
+    &.SB>svg {
+        left:15px;
+    }
+
+    & svg {
+        position:absolute;
+
+        width:20px;
+        height:20px;
+    }
+}

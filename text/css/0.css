@@ -1,0 +1,45 @@
+@import "./call/i.css";
+@import "./df.css";
+@import "./var.css";
+
+@font-face {
+    font-family: 'monts';
+    src: url('/f/font/ttf/monts.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.hideable {
+    opacity:0;
+    pointer-events:none;
+
+    &.a {
+        opacity:1;
+        pointer-events:auto;
+    }
+
+    &.b {
+        opacity:1;
+    }
+}
+
+.i2 > svg:nth-child(2) {
+    display:none;
+}
+
+.i2.TW {
+    &>svg:nth-child(1) {
+        display:none;
+    }
+    &>svg:nth-child(2) {
+        display:block;
+    }
+}
+
+button._180 svg {
+    transition:.2s transform;
+    transform:rotate(0);
+}
+button._180.R svg {
+    transform:rotate(180deg);
+}
